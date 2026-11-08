@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — Material Arc</title>
+  <meta name="description" content="Privacy policy for the Material Arc watch face on Garmin Venu 3.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header>
+    <p class="banner"><strong>Local preview. Not published.</strong> The effective date and legal name below are still placeholders. They are not a date or a legal name. The support email is the approved public address.</p>
+    <nav aria-label="Pages">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+        <li><a href="licenses.html">Licences</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <h1>Privacy policy</h1>
+    <p class="tagline">Material Arc</p>
+    <p>Effective date: <span class="placeholder"><span class="placeholder-label">Placeholder</span>[EFFECTIVE_DATE]</span></p>
+    <p>Material Arc is a watch face for the Garmin Venu 3, published by an individual under the public name Material Arc Studio ("the developer"). Material Arc Studio is a display name. It is not a registered company. The developer's legal name, <span class="placeholder"><span class="placeholder-label">Placeholder</span>[LEGAL_DEVELOPER_NAME]</span>, has not been added yet. This policy describes that watch face. It describes the behavior of the approved Beta 10 implementation, which is the functional baseline for public version 1.0.0.</p>
+    <p>This policy does not describe Garmin Connect, the watch's operating system, or any other application. Garmin may store and sync health and activity information under Garmin's own terms. Material Arc does not control that.</p>
+
+    <h2>Information the face uses</h2>
+    <p>The face reads information that is already on the watch, and only so it can draw the face.</p>
+    <table>
+      <thead>
+        <tr><th scope="col">Information</th><th scope="col">Why it is used</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Time and date</th>
+          <td>Clock, weekday, and date. The 12-hour or 24-hour choice follows the watch setting. Weekday names are English.</td>
+        </tr>
+        <tr>
+          <th scope="row">Weather</th>
+          <td>Current temperature, weather condition, and today's forecast low and high, for the weather arc and icon. The temperature is shown as a whole number of degrees Celsius. An observation older than three hours is not shown as the current temperature. The face does not read a location or a place name.</td>
+        </tr>
+        <tr>
+          <th scope="row">Battery level</th>
+          <td>Battery arc, and the battery percentage on the always-on display.</td>
+        </tr>
+        <tr>
+          <th scope="row">Notification count</th>
+          <td>A notification icon and count when notifications are waiting. The text of a notification is not read.</td>
+        </tr>
+        <tr>
+          <th scope="row">Steps and step goal</th>
+          <td>Steps arc. The arc shows progress toward the watch's step goal.</td>
+        </tr>
+        <tr>
+          <th scope="row">Active calories</th>
+          <td>Number in the calorie gauge.</td>
+        </tr>
+        <tr>
+          <th scope="row">Total calories</th>
+          <td>How full the calorie ring is, compared with active calories. The total is not shown as its own number.</td>
+        </tr>
+        <tr>
+          <th scope="row">Heart rate</th>
+          <td>Number and position on the heart gauge. The face uses the heart-rate complication. If that reading is missing, it uses the latest sample from the watch's recent heart-rate history.</td>
+        </tr>
+        <tr>
+          <th scope="row">Resting heart rate and heart-rate zones</th>
+          <td>Where to place the current heart rate on the gauge. These values are not shown as numbers.</td>
+        </tr>
+        <tr>
+          <th scope="row">Birth year</th>
+          <td>Used only when the heart-rate zones are missing, and only to estimate an age for that gauge scale. Birth year and age are not shown.</td>
+        </tr>
+        <tr>
+          <th scope="row">Body Battery</th>
+          <td>Energy arc.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Memory, storage, and transmission</h2>
+    <p>While the face is running, it keeps the current readings in memory.</p>
+    <ul>
+      <li>A heart-rate sample taken from history can be kept for up to 60 seconds.</li>
+      <li>A Body Battery value can be kept for up to 30 minutes if a later reading fails. The face then shows that recent value.</li>
+      <li>Other readings are taken again on each update. A missing calorie reading is not kept for the next update.</li>
+    </ul>
+    <p>The face does not write these readings to its own storage. It does not have an account, a network request, or an analytics channel, and it does not send the readings to the developer or to any other server.</p>
+    <p>The face can write short status codes to the watch's local debug output. The weather code includes the arc percentage, not the temperature. Those codes are not sent off the watch by this face.</p>
+
+    <h2>Connect IQ permissions</h2>
+    <p>The face requests two permissions:</p>
+    <ul>
+      <li>Complication Subscriber, to read heart rate, active calories, and Body Battery.</li>
+      <li>User Profile, to read resting heart rate, heart-rate zones, and birth year.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:michaelgeng0423@gmail.com">michaelgeng0423@gmail.com</a></p>
+    <p>The developer does not receive a copy of the readings listed above. A request to the developer cannot produce a copy of heart rate, calories, steps, Body Battery, or weather from this face. Garmin may hold related information under Garmin's own services.</p>
+
+    <h2>Changes</h2>
+    <p>If a later version of Material Arc reads additional information, or starts storing or transmitting it, this policy will be updated before that version is published. The date at the top will change with the policy.</p>
+  </main>
+  <footer>
+    <p><a href="index.html">Material Arc</a> · <a href="licenses.html">Licences</a></p>
+  </footer>
+</body>
+</html>
